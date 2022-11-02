@@ -1,0 +1,183 @@
+body{
+    background-color:  hsl(210, 46%, 95%);
+    margin:20% 10% 0%;
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+}
+.mainBody{
+    display: flex;
+    background: white;
+    border-radius: 15px;
+
+}
+
+.leftSide{
+    display: flex;
+}
+
+.drawers{
+    width: 98%;
+    border-start-start-radius: 15px;
+    border-end-start-radius: 15px;
+}
+
+.rightSide{
+    margin: 5% 4% 0% 5%;;
+}
+.headingText{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0% 10% 5% 5%;
+    color: hsl(217, 19%, 35%);
+}
+.subText{
+    font-size: 1rem;
+    margin: 5% 15% 5% 5%;
+    color:hsl(212, 23%, 69%);
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0% 10% 2% 5%;
+}
+.personInfo{
+    display: flex;
+}
+.michelleImg{
+    border-radius: 50%;
+    height: 50px;
+    margin: 15px 15px 0px 0px;
+}
+.boxInfo{}
+.name{
+    margin-bottom: 0px;
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+.date{
+    margin-top: 0px;
+    color:hsl(212, 23%, 69%);
+}
+
+.shareIconButton{
+    width: 5%;
+    height: 0%;
+    padding: 2%;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 50%;
+}
+
+
+.ShareOnSM{
+    opacity: 0;
+    background-color: hsl(217, 19%, 35%);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 30%;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 27%;
+    right: 5%;
+    padding: 1%;
+}
+.ShareOnSM::after{
+    content: "";
+    position: absolute;
+    border: 2rem solid transparent;
+    border-top-color: hsl(217, 19%, 35%);
+    bottom: -3.4rem;
+    right: 38%;
+}
+.share{
+    color: hsl(212, 23%, 69%);
+}
+.icons{
+    align-self: center;
+}
+.facebookC{
+    content: url(./images/icon-facebook.svg);
+    margin-right: 15%;
+    
+}
+.twitterC{
+    content: url(./images/icon-twitter.svg);
+    margin-right: 15%;
+}
+.pinterestC{
+    content: url(./images/icon-pinterest.svg);
+}
+@media screen and (max-width:650px) {
+    .mainBody{
+        display: block;
+    }
+    
+    .drawers{
+        width: 100%;
+        border-start-start-radius: 15px;
+        border-start-end-radius: 15px;
+        border-end-start-radius: 0px;
+    }
+    
+    .rightSide{
+        margin: 15% 5% 5%;
+    }
+    .headingText{
+        font-size: 1rem;
+    }
+    .subText{
+        font-size: 0.8rem;
+    }
+    
+    .info{
+        margin: 0%;
+    }
+    .boxInfo{
+        margin-top: 5%;
+    }
+    .name{
+        font-size: 0.8rem;
+        
+    }
+
+    .shareIconButton{
+        background-color: hsl(212, 23%, 69%);
+        z-index: 2;
+    }
+    
+    
+    .ShareOnSM{
+        opacity: 0;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 76%;
+        border-radius: 0;
+        border-end-end-radius: 15px;
+        border-end-start-radius:15px ;
+        bottom: auto;
+        right: 10%;
+        padding: 2%;
+    }
+    .ShareOnSM::after{
+        content: "";
+        position: absolute;
+        border: 0rem solid transparent;
+        border-top-color: white;
+        bottom: 0%;
+        right: 0%;
+    }
+    .share{
+        margin-left: 25%;
+    }
+    .icons {
+        text-align-last: justify;
+    }
+    .facebookC{
+        margin-right: 0%;
+        
+    }
+    .twitterC{
+        margin-right: 0%;
+    }
+}
